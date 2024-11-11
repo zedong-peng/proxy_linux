@@ -12,6 +12,7 @@ mkdir -p $HOME/.config/clash
 
 wget -O $HOME/.config/clash/config.yaml [订阅链接]
 
+
 ./clash
 ```
 no need to set http_proxy env in .bashrc
