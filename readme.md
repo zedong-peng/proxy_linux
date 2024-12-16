@@ -12,7 +12,10 @@ mkdir -p $HOME/.config/clash
 
 wget -O $HOME/.config/clash/config.yaml [订阅链接]
 
+vim $HOME/.config/clash/kingfast.yaml # edit the conflict port
 
-./clash
+git config --global http.proxy "http://127.0.0.1:8080"
+git config --global https.proxy "http://127.0.0.1:8080"
+
+./clash -f $HOME/.config/clash/kingfast.yaml
 ```
-no need to set http_proxy env in .bashrc
